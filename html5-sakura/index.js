@@ -110,12 +110,12 @@ Branch.prototype = {
     if (this.r < 0.7 || this.generation > 10) {
       this.tree.removeBranch(this)
       //开始绘制叶子
-      // let leaf = new Leaf(this.position,10,this.color,this.tree.ctx)
-      // leaf.draw()
+      let leaf = new Leaf(this.position,10,this.color,this.tree.ctx)
+      leaf.draw()
 
       //绘制花瓣
-      let flower = new Flower(this.position,'#CE466F',this.tree.ctx)
-      flower.draw()
+      // let flower = new Flower(this.position,'#CE466F',this.tree.ctx)
+      // flower.draw()
     }
   },
 
